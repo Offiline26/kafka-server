@@ -1,4 +1,4 @@
-FROM bitnami/kafka:latest
+FROM bitnami/kafka:3.8.0
 
 ENV KAFKA_ENABLE_KRAFT=yes \
     KAFKA_CFG_NODE_ID=1 \
@@ -11,5 +11,6 @@ ENV KAFKA_ENABLE_KRAFT=yes \
     ALLOW_PLAINTEXT_LISTENER=yes
 
 EXPOSE 9092 9093
+
 
 
