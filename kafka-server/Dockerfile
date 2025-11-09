@@ -1,4 +1,4 @@
-FROM bitnami/kafka:3.8
+FROM bitnami/kafka:3.8-debian-12
 
 ENV KAFKA_CFG_NODE_ID=1
 ENV KAFKA_CFG_PROCESS_ROLES=controller,broker
@@ -12,4 +12,5 @@ ENV CLUSTER_ID=abcdefghijklmnopqrstuvwx
 ENV KAFKA_CFG_ADVERTISED_LISTENERS=PLAINTEXT://kafka-server:9092
 
 EXPOSE 9092 9093
+
 
